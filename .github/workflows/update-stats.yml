@@ -1,0 +1,10 @@
+name: Update Stats
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Your stats update logic
